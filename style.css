@@ -1,0 +1,151 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+#header {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 70px 40px 40px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    ". . . . gmail images menu connexion";
+}
+
+a {
+text-decoration: none;
+color: darkgray;
+font-size: 13px;
+font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+#gmail {
+grid-area: gmail;
+justify-self: center;
+align-self: center;
+}
+
+#images {
+grid-area: images;
+justify-self: center;
+align-self: center;
+}
+
+#menu {
+grid-area: menu;
+justify-self: center;
+align-self: center;
+}
+
+#connexion {
+grid-area: connexion;
+justify-self: center;
+align-self: center;
+
+}
+
+#main {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 200px 100px 100px;
+grid-template-areas:
+". logo ."
+". recherche ."
+". flexbox .";
+}
+
+#logo {
+    grid-area: logo;
+    justify-self: center;
+    align-self: center;
+}
+
+#recherche {
+grid-area: recherche;
+height: 30px;
+width: 80%;
+justify-self: center;
+align-self: center;
+border: 1px solid;
+border-radius: 30px;
+box-shadow: 2px 2px 5px slategray;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#recherche-google-bouton {
+    grid-area: recherche-google-bouton;
+
+}
+
+#chance-bouton {
+    grid-area: chance-bouton;
+    
+}
+
+
+#under {
+    position: absolute;
+    bottom: 0%;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 300px 300px 150px 80px 80px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "pub entreprise propos fonct . info conf cond paramètres";
+}
+
+#pub {
+grid-area: pub ;
+justify-self: center;
+align-self: center;
+}
+
+#entreprise {
+    grid-area: entreprise;
+    justify-self: center;
+align-self: center;
+
+}
+
+#propos {
+    grid-area: propos;
+    justify-self: center;
+align-self: center;
+
+}
+
+#fonct {
+    grid-area: fonct;
+    justify-self: center;
+    align-self: center;
+}
+
+#info {
+    grid-area: info;
+    justify-self: center;
+align-self: center;
+
+}
+
+#conf {
+    grid-area: conf;
+    justify-self: center;
+    align-self: center;
+}
+
+#cond {
+    grid-area: cond;
+    justify-self: center;
+    align-self: center;
+}
+
+#paramètres {
+    grid-area: paramètres;
+    justify-self: center;
+    align-self: center;
+}
